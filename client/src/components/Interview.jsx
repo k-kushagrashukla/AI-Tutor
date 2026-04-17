@@ -39,7 +39,7 @@ export default function Interview() {
     try {
       setLoading(true);
 
-      const res = await axios.post("http://localhost:5000/api/evaluate", {
+      const res = await axios.post("https://ai-tutor-k3v7.onrender.com/api/evaluate", {
         answer,
         question: questions[step],
       });
